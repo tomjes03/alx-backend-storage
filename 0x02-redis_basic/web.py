@@ -26,5 +26,5 @@ def url_count(method: Callable) -> Callable:
 @url_count
 def get_page(url: str) -> str:
     """Web cache and tracker"""
-    res = requests.get(url)
+    res = requests.get_page('http://slowwly.robertomurray.co.uk')
     return res
